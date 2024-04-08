@@ -42,7 +42,7 @@ const CoffeesIndex = (props) => {
                 })
                 setError(true)
             })
-	}, [])
+	}, [msgAlert])
 
     const addToOrder = (coffee) => {
         console.log('Before adding coffee to order:', order);

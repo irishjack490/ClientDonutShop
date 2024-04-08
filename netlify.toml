@@ -1,0 +1,7 @@
+[build]
+  command = "CI=true npm run build"
+  commandOrigin = "ui"
+  NODE_VERSION = "18.18.2"
+  NPM_VERSION = "9.8.1"
+  publish = "/opt/build/repo/build"
+  publishOrigin = "ui"
