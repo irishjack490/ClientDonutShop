@@ -1,14 +1,11 @@
-import DonutsIndex from './donuts/DonutsIndex'
-import OnSignIn from './orders/OnSignIn'
-import { useEffect, useState } from 'react';
-import {  createOrder, getActiveOrders } from '../api/order';
-import { useNavigate } from 'react-router-dom';
+
+//import { useNavigate } from 'react-router-dom';
 
 
 const Home = (props) => {
-	const { msgAlert, user, order, setOrder} = props
+	
 	//console.log('props in home', props)
-	const navigate = useNavigate();
+	//const navigate = useNavigate();
 
 
 

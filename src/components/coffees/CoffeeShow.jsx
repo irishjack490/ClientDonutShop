@@ -3,18 +3,18 @@ import { useParams } from 'react-router-dom'
 import { getOneCoffee } from  '../../api/coffee'
 import LoadingScreen from '../shared/LoadingScreen'
 import { Container, Card } from 'react-bootstrap'
-import { useNavigate } from 'react-router-dom'
+//import { useNavigate } from 'react-router-dom'
 import messages from '../shared/AutoDismissAlert/messages'
 
 const OrderShow = (props) => {
     const { id } = useParams()
-    const { user, msgAlert } = props
+    const { msgAlert } = props
     const [coffee, setCoffee] = useState(null)
-    const [order, setOrder] = useState(null)
+    //const [order, setOrder] = useState(null)
 
-    const [updated, setUpdated] = useState(false)
+    const [updated] = useState(false)
 
-    const navigate = useNavigate()
+    //const navigate = useNavigate()
 
     useEffect(() => {
         getOneCoffee(id)
@@ -27,7 +27,7 @@ const OrderShow = (props) => {
                 })
                 
             })
-    }, [updated])
+    }, [updated, id, msgAlert])
     
 
 
