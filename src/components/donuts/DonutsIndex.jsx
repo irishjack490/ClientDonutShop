@@ -37,7 +37,7 @@ const DonutsIndex = (props) => {
         })
         setError(true)
     })
-}, [])
+}, [msgAlert])
 
 const addToOrder = (donut) => {
     console.log('Before adding donut to order:', order);

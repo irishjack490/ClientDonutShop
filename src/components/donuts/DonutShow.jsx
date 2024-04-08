@@ -3,17 +3,17 @@ import { useParams } from 'react-router-dom'
 import { getOneDonut } from  '../../api/donut'
 import LoadingScreen from '../shared/LoadingScreen'
 import { Container, Card } from 'react-bootstrap'
-import { useNavigate } from 'react-router-dom'
+//import { useNavigate } from 'react-router-dom'
 import messages from '../shared/AutoDismissAlert/messages'
 
 const DonutShow = (props) => {
     const { id } = useParams()
-    const { user, msgAlert } = props
+    const { msgAlert } = props
 
     const [donut, setDonut] = useState(null)
-    const [updated, setUpdated] = useState(false)
+    const [updated] = useState(false)
 
-    const navigate = useNavigate()
+    //const navigate = useNavigate()
 
    
 
@@ -28,7 +28,7 @@ const DonutShow = (props) => {
                 })
                 
             })
-    }, [updated])
+    }, [updated, id, msgAlert])
     
 
 
