@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardText, Button} from 'react-bootstrap'; // Import Card component from react-bootstrap
+import { Card } from 'react-bootstrap'; // Import Card component from react-bootstrap
 
 
 const OrdersPage = ({ orders, onDeleteItemClick, DeleteItem }) => {
